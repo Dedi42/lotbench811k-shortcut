@@ -1,0 +1,894 @@
+{
+ "note": "Values as printed in the paper (Table 3, Sections 5.1-5.2, Figs. 4-5, Online Resource S2-S5, S12). 'digits' = rounding used in the paper; 'scale' converts fractions to percent. WM-811K lot task: SALE, SALE-lite, MCE and MCE-lite without wafer-label pretraining of the map encoder (results_wmlot_nopretrain); the values of the first paper run are in expected_values_with_wafer_pretraining.json. Revision 2: lot-summary GBDT (B3-GB) added to the Holm families (19 / 18); values of v1.0.0 (18 / 17) in expected_values_without_gbdt.json. Revision 2 tuning check (Section S12) from results_revision2/tuning_summary.json.",
+ "checks": [
+  {
+   "label": "Table 3, LotBench AUROC B1",
+   "path": "lotbench.all.B1.mean",
+   "paper": 0.683,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC B4",
+   "path": "lotbench.all.B4.mean",
+   "paper": 0.728,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC B9",
+   "path": "lotbench.all.B9.mean",
+   "paper": 0.767,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC B3-RF",
+   "path": "lotbench.all.B3-RF.mean",
+   "paper": 0.892,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC SALE",
+   "path": "lotbench.all.SALE.mean",
+   "paper": 0.85,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC SALE-S",
+   "path": "lotbench.all.SALE-S.mean",
+   "paper": 0.84,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC SALE-lite",
+   "path": "lotbench.all.SALE-lite.mean",
+   "paper": 0.84,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench AUROC MCE",
+   "path": "lotbench.all.MCE.mean",
+   "paper": 0.914,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC B1",
+   "path": "wmlot.all.B1.mean",
+   "paper": 0.816,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC B4",
+   "path": "wmlot.all.B4.mean",
+   "paper": 0.893,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC B9",
+   "path": "wmlot.all.B9.mean",
+   "paper": 0.908,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC B3-RF",
+   "path": "wmlot.all.B3-RF.mean",
+   "paper": 0.904,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC SALE",
+   "path": "wmlot.all.SALE.mean",
+   "paper": 0.869,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC SALE-S",
+   "path": "wmlot.all.SALE-S.mean",
+   "paper": 0.87,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC SALE-lite",
+   "path": "wmlot.all.SALE-lite.mean",
+   "paper": 0.913,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, WM-811K AUROC MCE",
+   "path": "wmlot.all.MCE.mean",
+   "paper": 0.912,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 LotBench MCE minus forest",
+   "path": "lotbench.all.MCE.diff",
+   "paper": 0.022,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 LotBench MCE Holm p (corrected t)",
+   "path": "lotbench.all.MCE.p_nb_holm",
+   "paper": 0.008,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 LotBench SALE Holm p",
+   "path": "lotbench.all.SALE.p_nb_holm",
+   "paper": 0.069,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 confirmatory seeds: MCE minus forest",
+   "path": "lotbench.all.MCE.diff_conf",
+   "paper": 0.024,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 confirmatory seeds: positive seeds",
+   "path": "lotbench.all.MCE.npos_conf",
+   "paper": 7,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 confirmatory seeds: corrected p",
+   "path": "lotbench.all.MCE.p_nb_conf",
+   "paper": 0.001,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 all ten seeds positive",
+   "path": "lotbench.all.MCE.npos",
+   "paper": 10,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 without F4/F5: MCE AUROC",
+   "path": "lotbench.noF4F5.MCE.mean",
+   "paper": 0.878,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 without F4/F5: MCE gain",
+   "path": "lotbench.noF4F5.MCE.diff",
+   "paper": 0.031,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 without F4/F5: Holm p",
+   "path": "lotbench.noF4F5.MCE.p_nb_holm",
+   "paper": 0.023,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 without F4/F5: forest AUROC",
+   "path": "lotbench.noF4F5.B3-RF.mean",
+   "paper": 0.847,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 without F4/F5: attention MIL AUROC",
+   "path": "lotbench.noF4F5.B9.mean",
+   "paper": 0.845,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S5 without F5: Holm p",
+   "path": "lotbench.noF5.MCE.p_nb_holm",
+   "paper": 0.011,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3 recall forest (%)",
+   "path": "lotbench.recall.B3-RF.recall",
+   "paper": 60,
+   "digits": 0,
+   "scale": 100,
+   "tol": 0
+  },
+  {
+   "label": "Table 3 recall MCE (%)",
+   "path": "lotbench.recall.MCE.recall",
+   "paper": 72,
+   "digits": 0,
+   "scale": 100,
+   "tol": 0
+  },
+  {
+   "label": "5.1 realized FAR forest (%)",
+   "path": "lotbench.recall.B3-RF.far",
+   "paper": 5.2,
+   "digits": 1,
+   "scale": 100,
+   "tol": 0
+  },
+  {
+   "label": "5.1 realized FAR MCE (%)",
+   "path": "lotbench.recall.MCE.far",
+   "paper": 5.0,
+   "digits": 1,
+   "scale": 100,
+   "tol": 0
+  },
+  {
+   "label": "Table 3 recall SALE",
+   "path": "lotbench.recall.SALE.recall",
+   "paper": 0.55,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3 recall structured SALE",
+   "path": "lotbench.recall.SALE-S.recall",
+   "paper": 0.28,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4c forest: abnormal lots held",
+   "path": "lotbench.decisions.B3-RF.hold_abnormal",
+   "paper": 1493,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4c forest: normal lots held",
+   "path": "lotbench.decisions.B3-RF.hold_normal",
+   "paper": 1443,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4c ensemble: abnormal lots held",
+   "path": "lotbench.decisions.MCE.hold_abnormal",
+   "paper": 1780,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4c ensemble: normal lots held",
+   "path": "lotbench.decisions.MCE.hold_normal",
+   "paper": 1380,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4c ensemble: normal lots released",
+   "path": "lotbench.decisions.MCE.release_normal",
+   "paper": 26145,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F1",
+   "path": "lotbench.recall.B3-RF.per.F1",
+   "paper": 0.49,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F1",
+   "path": "lotbench.recall.MCE.per.F1",
+   "paper": 0.68,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F2",
+   "path": "lotbench.recall.B3-RF.per.F2",
+   "paper": 0.64,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F2",
+   "path": "lotbench.recall.MCE.per.F2",
+   "paper": 0.64,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F3",
+   "path": "lotbench.recall.B3-RF.per.F3",
+   "paper": 0.46,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F3",
+   "path": "lotbench.recall.MCE.per.F3",
+   "paper": 0.7,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F4",
+   "path": "lotbench.recall.B3-RF.per.F4",
+   "paper": 0.72,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F4",
+   "path": "lotbench.recall.MCE.per.F4",
+   "paper": 0.82,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F5",
+   "path": "lotbench.recall.B3-RF.per.F5",
+   "paper": 1.0,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F5",
+   "path": "lotbench.recall.MCE.per.F5",
+   "paper": 1.0,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall forest F6",
+   "path": "lotbench.recall.B3-RF.per.F6",
+   "paper": 0.27,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Fig. 4d recall ensemble F6",
+   "path": "lotbench.recall.MCE.per.F6",
+   "paper": 0.43,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F1",
+   "path": "lotbench.per_scenario_auroc.MCE.F1",
+   "paper": 0.889,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F2",
+   "path": "lotbench.per_scenario_auroc.MCE.F2",
+   "paper": 0.939,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F3",
+   "path": "lotbench.per_scenario_auroc.MCE.F3",
+   "paper": 0.901,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F4",
+   "path": "lotbench.per_scenario_auroc.MCE.F4",
+   "paper": 0.97,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F5",
+   "path": "lotbench.per_scenario_auroc.MCE.F5",
+   "paper": 1.0,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 MCE AUROC F6",
+   "path": "lotbench.per_scenario_auroc.MCE.F6",
+   "paper": 0.768,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F1",
+   "path": "lotbench.per_scenario_auroc.B1.F1",
+   "paper": 0.91,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F2",
+   "path": "lotbench.per_scenario_auroc.B1.F2",
+   "paper": 0.724,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F3",
+   "path": "lotbench.per_scenario_auroc.B1.F3",
+   "paper": 0.847,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F4",
+   "path": "lotbench.per_scenario_auroc.B1.F4",
+   "paper": 0.474,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F5",
+   "path": "lotbench.per_scenario_auroc.B1.F5",
+   "paper": 0.501,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Hotelling AUROC F6",
+   "path": "lotbench.per_scenario_auroc.B1.F6",
+   "paper": 0.629,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "S4 Deep Sets AUROC F3 (within-lot drift)",
+   "path": "lotbench.per_scenario_auroc.B7.F3",
+   "paper": 0.916,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table S12 Spearman forest vs SALE",
+   "path": "lotbench.spearman_abnormal.matrix.1.4",
+   "paper": 0.73,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table S12 Spearman forest vs Hotelling",
+   "path": "lotbench.spearman_abnormal.matrix.1.0",
+   "paper": 0.12,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table S12 Spearman forest vs tool commonality",
+   "path": "lotbench.spearman_abnormal.matrix.1.5",
+   "paper": 0.02,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM MCE Holm p",
+   "path": "wmlot.all.MCE.p_nb_holm",
+   "paper": 0.35,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM MCE confirmatory p",
+   "path": "wmlot.all.MCE.p_nb_conf",
+   "paper": 0.104,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM SALE-lite minus forest",
+   "path": "wmlot.all.SALE-lite.diff",
+   "paper": 0.009,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM SALE-lite corrected p",
+   "path": "wmlot.all.SALE-lite.p_nb",
+   "paper": 0.178,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM SALE-lite recall",
+   "path": "wmlot.recall.SALE-lite.recall",
+   "paper": 0.66,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM forest recall",
+   "path": "wmlot.recall.B3-RF.recall",
+   "paper": 0.63,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM SALE-lite above MCE: seeds",
+   "path": "wmlot.salelite_vs_mce.npos",
+   "paper": 6,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.1 WM SALE-lite vs MCE corrected p",
+   "path": "wmlot.salelite_vs_mce.p_nb",
+   "paper": 0.803,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 0: diff",
+   "path": "learning_curve.0.diff",
+   "paper": -0.003,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 0: p",
+   "path": "learning_curve.0.p_paired_t",
+   "paper": 0.89,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 1: diff",
+   "path": "learning_curve.1.diff",
+   "paper": 0.024,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 1: p",
+   "path": "learning_curve.1.p_paired_t",
+   "paper": 0.029,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 2: diff",
+   "path": "learning_curve.2.diff",
+   "paper": 0.024,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 2: p",
+   "path": "learning_curve.2.p_paired_t",
+   "paper": 0.018,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 3: diff",
+   "path": "learning_curve.3.diff",
+   "paper": 0.028,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 3: p",
+   "path": "learning_curve.3.p_paired_t",
+   "paper": 0.003,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 4: diff",
+   "path": "learning_curve.4.diff",
+   "paper": 0.023,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 4: p",
+   "path": "learning_curve.4.p_paired_t",
+   "paper": 0.002,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 5: diff",
+   "path": "learning_curve.5.diff",
+   "paper": 0.015,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve fraction 5: p",
+   "path": "learning_curve.5.p_paired_t",
+   "paper": 0.013,
+   "digits": 3,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 learning curve: abnormal lots at 2%",
+   "path": "learning_curve.0.abnormal_train",
+   "paper": 22,
+   "digits": 0,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 recall at 22 lots: forest",
+   "path": "learning_curve.0.recall_forest",
+   "paper": 0.14,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "5.2 recall at 22 lots: ensemble",
+   "path": "learning_curve.0.recall_ensemble",
+   "paper": 0.26,
+   "digits": 2,
+   "scale": 1,
+   "tol": 0
+  },
+  {
+   "label": "Table 3, LotBench lot-summary GBDT AUROC",
+   "path": "lotbench.all.B3-GB.mean",
+   "paper": 0.888,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, LotBench lot-summary GBDT diff",
+   "path": "lotbench.all.B3-GB.diff",
+   "paper": -0.004,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, LotBench lot-summary GBDT Holm p",
+   "path": "lotbench.all.B3-GB.p_nb_holm",
+   "paper": 0.737,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, LotBench lot-summary GBDT recall",
+   "path": "lotbench.recall.B3-GB.recall",
+   "paper": 0.63,
+   "digits": 2,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, LotBench lot-summary GBDT no-context AUROC",
+   "path": "lotbench.noF4F5.B3-GB.mean",
+   "paper": 0.839,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, WM lot-summary GBDT AUROC",
+   "path": "wmlot.all.B3-GB.mean",
+   "paper": 0.901,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, WM lot-summary GBDT diff",
+   "path": "wmlot.all.B3-GB.diff",
+   "paper": -0.003,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, WM lot-summary GBDT Holm p",
+   "path": "wmlot.all.B3-GB.p_nb_holm",
+   "paper": 1.0,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "Table 3, WM lot-summary GBDT recall",
+   "path": "wmlot.recall.B3-GB.recall",
+   "paper": 0.62,
+   "digits": 2,
+   "scale": 1
+  },
+  {
+   "label": "S12 forest default AUROC",
+   "path": "tuning.forest.mean_default",
+   "paper": 0.902,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "S12 forest tuned AUROC",
+   "path": "tuning.forest.mean_tuned",
+   "paper": 0.904,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "S12 SALE default AUROC",
+   "path": "tuning.sale.mean_default",
+   "paper": 0.868,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "S12 SALE tuned AUROC",
+   "path": "tuning.sale.mean_tuned",
+   "paper": 0.841,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 forest minus SALE, default",
+   "path": "tuning.forest_minus_sale_default.mean",
+   "paper": 0.034,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 paired t p, default",
+   "path": "tuning.forest_minus_sale_default.p_paired_t",
+   "paper": 0.035,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 forest minus SALE, tuned",
+   "path": "tuning.forest_minus_sale_tuned.mean",
+   "paper": 0.062,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 paired t p, tuned",
+   "path": "tuning.forest_minus_sale_tuned.p_paired_t",
+   "paper": 0.072,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "S12/Table S16 pooled SD of SALE between training seeds",
+   "path": "tuning.noise.pooled_sd",
+   "paper": 0.017,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "S12 same training seed reproduces the default refit",
+   "path": "tuning.noise.same_seed_max_abs_diff",
+   "paper": 0.0,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 tuned minus mean of default runs",
+   "path": "tuning.noise.tuned_minus_mean.mean",
+   "paper": -0.013,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 paired t p, tuned vs default runs",
+   "path": "tuning.noise.tuned_minus_mean.p_paired_t",
+   "paper": 0.37,
+   "digits": 2,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 forest minus mean of four SALE runs",
+   "path": "tuning.noise.forest_minus_sale_mean.mean",
+   "paper": 0.048,
+   "digits": 3,
+   "scale": 1
+  },
+  {
+   "label": "5.2/S12 paired t p, forest vs SALE runs",
+   "path": "tuning.noise.forest_minus_sale_mean.p_paired_t",
+   "paper": 0.019,
+   "digits": 3,
+   "scale": 1
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+WM-811K lot task: paper run (map encoder pretrained on wafer labels) vs rerun without wafer-label pretraining
+
+detector                       AUROC            diff          Holm p        recall
+B3-RF                  0.904->0.904  ->  ->  0.627->0.627
+B9                     0.908->0.908  +0.004->+0.004  1.000->1.000  ->
+SALE                   0.894->0.869  -0.010->-0.036  1.000->0.026  0.605->0.559
+SALE-lite              0.927->0.913  +0.023->+0.009  ->  0.707->0.659
+MCE                    0.915->0.912  +0.011->+0.008  0.225->0.306  0.658->0.663
+MCE-lite               0.914->0.914  +0.010->+0.010  ->  0.668->0.668
+MCE-without-SALE       0.911->0.911  +0.007->+0.007  ->  ->
+
+SALE-lite vs MCE         diff +0.012->+0.001, corrected p 0.046->0.803, seeds above 9->6
+MCE-without-SALE vs MCE  diff -0.004->-0.001, corrected p 0.108->0.060, seeds above 1->1
+MCE-lite vs MCE          diff -0.000->+0.002, corrected p 0.939->0.415, seeds above 5->7
+SALE-lite vs SALE        diff +0.033->+0.044, corrected p 0.006->< 0.001, seeds above 10->10

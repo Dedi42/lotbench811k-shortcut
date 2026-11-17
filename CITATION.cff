@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or the released results, please cite the paper and this record."
+title: "Lot-level abnormality detection: shortcut-aware protocol, LotBench-811K and stacking (code and public results)"
+version: "1.2.0"
+date-released: "2026-11-17"
+license: MIT
+authors:
+  - family-names: Surahman
+    given-names: Dedi
+    orcid: "https://orcid.org/0009-0002-5005-1466"
+    affiliation: "Academy of Innovative Semiconductor and Sustainable Manufacturing, National Cheng Kung University"
+  - family-names: Hsieh
+    given-names: Yu-Ming
+    orcid: "https://orcid.org/0000-0002-3037-0104"
+    affiliation: "Academy of Innovative Semiconductor and Sustainable Manufacturing, National Cheng Kung University"
+keywords: [lot-level analysis, anomaly detection, evaluation protocol, stacked ensemble, shortcut learning, conformal prediction, semiconductor manufacturing, WM-811K]
+preferred-citation:
+  type: article
+  title: "Benchmarking lot-level abnormality detection in semiconductor manufacturing"
+  authors:
+    - family-names: Surahman
+      given-names: Dedi
+    - family-names: Hsieh
+      given-names: Yu-Ming
+  journal: "Journal of Intelligent Manufacturing"
+  status: submitted

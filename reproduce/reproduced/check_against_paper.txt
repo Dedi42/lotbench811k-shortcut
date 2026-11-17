@@ -1,0 +1,116 @@
+PASS  Table 3, LotBench AUROC B1: paper 0.683, reproduced 0.6834
+PASS  Table 3, LotBench AUROC B4: paper 0.728, reproduced 0.7277
+PASS  Table 3, LotBench AUROC B9: paper 0.767, reproduced 0.7667
+PASS  Table 3, LotBench AUROC B3-RF: paper 0.892, reproduced 0.8921
+PASS  Table 3, LotBench AUROC SALE: paper 0.85, reproduced 0.8499
+PASS  Table 3, LotBench AUROC SALE-S: paper 0.84, reproduced 0.8399
+PASS  Table 3, LotBench AUROC SALE-lite: paper 0.84, reproduced 0.8396
+PASS  Table 3, LotBench AUROC MCE: paper 0.914, reproduced 0.9142
+PASS  Table 3, WM-811K AUROC B1: paper 0.816, reproduced 0.8158
+PASS  Table 3, WM-811K AUROC B4: paper 0.893, reproduced 0.8934
+PASS  Table 3, WM-811K AUROC B9: paper 0.908, reproduced 0.9082
+PASS  Table 3, WM-811K AUROC B3-RF: paper 0.904, reproduced 0.9041
+PASS  Table 3, WM-811K AUROC SALE: paper 0.869, reproduced 0.8686
+PASS  Table 3, WM-811K AUROC SALE-S: paper 0.87, reproduced 0.8703
+PASS  Table 3, WM-811K AUROC SALE-lite: paper 0.913, reproduced 0.9131
+PASS  Table 3, WM-811K AUROC MCE: paper 0.912, reproduced 0.9118
+PASS  5.1 LotBench MCE minus forest: paper 0.022, reproduced 0.0221
+PASS  5.1 LotBench MCE Holm p (corrected t): paper 0.008, reproduced 0.0083
+PASS  5.1 LotBench SALE Holm p: paper 0.069, reproduced 0.0687
+PASS  5.1 confirmatory seeds: MCE minus forest: paper 0.024, reproduced 0.024
+PASS  5.1 confirmatory seeds: positive seeds: paper 7, reproduced 7
+PASS  5.1 confirmatory seeds: corrected p: paper 0.001, reproduced 0.0013
+PASS  5.1 all ten seeds positive: paper 10, reproduced 10
+PASS  5.1 without F4/F5: MCE AUROC: paper 0.878, reproduced 0.878
+PASS  5.1 without F4/F5: MCE gain: paper 0.031, reproduced 0.0312
+PASS  5.1 without F4/F5: Holm p: paper 0.023, reproduced 0.0233
+PASS  5.1 without F4/F5: forest AUROC: paper 0.847, reproduced 0.8468
+PASS  5.1 without F4/F5: attention MIL AUROC: paper 0.845, reproduced 0.845
+PASS  S5 without F5: Holm p: paper 0.011, reproduced 0.0115
+PASS  Table 3 recall forest (%): paper 60, reproduced 60.3
+PASS  Table 3 recall MCE (%): paper 72, reproduced 71.9
+PASS  5.1 realized FAR forest (%): paper 5.2, reproduced 5.24
+PASS  5.1 realized FAR MCE (%): paper 5.0, reproduced 5.01
+PASS  Table 3 recall SALE: paper 0.55, reproduced 0.552
+PASS  Table 3 recall structured SALE: paper 0.28, reproduced 0.28
+PASS  Fig. 4c forest: abnormal lots held: paper 1493, reproduced 1493
+PASS  Fig. 4c forest: normal lots held: paper 1443, reproduced 1443
+PASS  Fig. 4c ensemble: abnormal lots held: paper 1780, reproduced 1780
+PASS  Fig. 4c ensemble: normal lots held: paper 1380, reproduced 1380
+PASS  Fig. 4c ensemble: normal lots released: paper 26145, reproduced 26145
+PASS  Fig. 4d recall forest F1: paper 0.49, reproduced 0.492
+PASS  Fig. 4d recall ensemble F1: paper 0.68, reproduced 0.681
+PASS  Fig. 4d recall forest F2: paper 0.64, reproduced 0.635
+PASS  Fig. 4d recall ensemble F2: paper 0.64, reproduced 0.639
+PASS  Fig. 4d recall forest F3: paper 0.46, reproduced 0.459
+PASS  Fig. 4d recall ensemble F3: paper 0.7, reproduced 0.699
+PASS  Fig. 4d recall forest F4: paper 0.72, reproduced 0.723
+PASS  Fig. 4d recall ensemble F4: paper 0.82, reproduced 0.821
+PASS  Fig. 4d recall forest F5: paper 1.0, reproduced 1.0
+PASS  Fig. 4d recall ensemble F5: paper 1.0, reproduced 1.0
+PASS  Fig. 4d recall forest F6: paper 0.27, reproduced 0.27
+PASS  Fig. 4d recall ensemble F6: paper 0.43, reproduced 0.425
+PASS  S4 MCE AUROC F1: paper 0.889, reproduced 0.8886
+PASS  S4 MCE AUROC F2: paper 0.939, reproduced 0.9392
+PASS  S4 MCE AUROC F3: paper 0.901, reproduced 0.9014
+PASS  S4 MCE AUROC F4: paper 0.97, reproduced 0.9697
+PASS  S4 MCE AUROC F5: paper 1.0, reproduced 1.0
+PASS  S4 MCE AUROC F6: paper 0.768, reproduced 0.7685
+PASS  S4 Hotelling AUROC F1: paper 0.91, reproduced 0.9104
+PASS  S4 Hotelling AUROC F2: paper 0.724, reproduced 0.7243
+PASS  S4 Hotelling AUROC F3: paper 0.847, reproduced 0.8474
+PASS  S4 Hotelling AUROC F4: paper 0.474, reproduced 0.4739
+PASS  S4 Hotelling AUROC F5: paper 0.501, reproduced 0.5007
+PASS  S4 Hotelling AUROC F6: paper 0.629, reproduced 0.6285
+PASS  S4 Deep Sets AUROC F3 (within-lot drift): paper 0.916, reproduced 0.9159
+PASS  Table S12 Spearman forest vs SALE: paper 0.73, reproduced 0.735
+PASS  Table S12 Spearman forest vs Hotelling: paper 0.12, reproduced 0.118
+PASS  Table S12 Spearman forest vs tool commonality: paper 0.02, reproduced 0.023
+PASS  5.1 WM MCE Holm p: paper 0.35, reproduced 0.3497
+PASS  5.1 WM MCE confirmatory p: paper 0.104, reproduced 0.1041
+PASS  5.1 WM SALE-lite minus forest: paper 0.009, reproduced 0.0089
+PASS  5.1 WM SALE-lite corrected p: paper 0.178, reproduced 0.1783
+PASS  5.1 WM SALE-lite recall: paper 0.66, reproduced 0.659
+PASS  5.1 WM forest recall: paper 0.63, reproduced 0.627
+PASS  5.1 WM SALE-lite above MCE: seeds: paper 6, reproduced 6
+PASS  5.1 WM SALE-lite vs MCE corrected p: paper 0.803, reproduced 0.803
+PASS  5.2 learning curve fraction 0: diff: paper -0.003, reproduced -0.0033
+PASS  5.2 learning curve fraction 0: p: paper 0.89, reproduced 0.8899
+PASS  5.2 learning curve fraction 1: diff: paper 0.024, reproduced 0.0236
+PASS  5.2 learning curve fraction 1: p: paper 0.029, reproduced 0.0285
+PASS  5.2 learning curve fraction 2: diff: paper 0.024, reproduced 0.0243
+PASS  5.2 learning curve fraction 2: p: paper 0.018, reproduced 0.0184
+PASS  5.2 learning curve fraction 3: diff: paper 0.028, reproduced 0.0285
+PASS  5.2 learning curve fraction 3: p: paper 0.003, reproduced 0.0027
+PASS  5.2 learning curve fraction 4: diff: paper 0.023, reproduced 0.0226
+PASS  5.2 learning curve fraction 4: p: paper 0.002, reproduced 0.002
+PASS  5.2 learning curve fraction 5: diff: paper 0.015, reproduced 0.0154
+PASS  5.2 learning curve fraction 5: p: paper 0.013, reproduced 0.013
+PASS  5.2 learning curve: abnormal lots at 2%: paper 22, reproduced 22.2
+PASS  5.2 recall at 22 lots: forest: paper 0.14, reproduced 0.141
+PASS  5.2 recall at 22 lots: ensemble: paper 0.26, reproduced 0.259
+PASS  Table 3, LotBench lot-summary GBDT AUROC: paper 0.888, reproduced 0.8878
+PASS  Table 3, LotBench lot-summary GBDT diff: paper -0.004, reproduced -0.0042
+PASS  Table 3, LotBench lot-summary GBDT Holm p: paper 0.737, reproduced 0.7372
+PASS  Table 3, LotBench lot-summary GBDT recall: paper 0.63, reproduced 0.63
+PASS  Table 3, LotBench lot-summary GBDT no-context AUROC: paper 0.839, reproduced 0.8389
+PASS  Table 3, WM lot-summary GBDT AUROC: paper 0.901, reproduced 0.9011
+PASS  Table 3, WM lot-summary GBDT diff: paper -0.003, reproduced -0.003
+PASS  Table 3, WM lot-summary GBDT Holm p: paper 1.0, reproduced 1.0
+PASS  Table 3, WM lot-summary GBDT recall: paper 0.62, reproduced 0.616
+PASS  S12 forest default AUROC: paper 0.902, reproduced 0.9023
+PASS  S12 forest tuned AUROC: paper 0.904, reproduced 0.9036
+PASS  S12 SALE default AUROC: paper 0.868, reproduced 0.8679
+PASS  S12 SALE tuned AUROC: paper 0.841, reproduced 0.8414
+PASS  5.2/S12 forest minus SALE, default: paper 0.034, reproduced 0.0344
+PASS  5.2/S12 paired t p, default: paper 0.035, reproduced 0.0345
+PASS  5.2/S12 forest minus SALE, tuned: paper 0.062, reproduced 0.0622
+PASS  5.2/S12 paired t p, tuned: paper 0.072, reproduced 0.0724
+PASS  S12/Table S16 pooled SD of SALE between training seeds: paper 0.017, reproduced 0.017
+PASS  S12 same training seed reproduces the default refit: paper 0.0, reproduced 0.0
+PASS  5.2/S12 tuned minus mean of default runs: paper -0.013, reproduced -0.0134
+PASS  5.2/S12 paired t p, tuned vs default runs: paper 0.37, reproduced 0.371
+PASS  5.2/S12 forest minus mean of four SALE runs: paper 0.048, reproduced 0.0476
+PASS  5.2/S12 paired t p, forest vs SALE runs: paper 0.019, reproduced 0.0185
+
+114 of 114 checks passed

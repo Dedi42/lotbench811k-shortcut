@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+openpyxl
+xlrd
+# PyTorch with CUDA is installed separately (see README.md, section 2):
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cu121
