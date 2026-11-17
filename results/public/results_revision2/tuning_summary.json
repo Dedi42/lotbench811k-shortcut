@@ -1,0 +1,1545 @@
+{
+ "_note": "LotBench-811K tuning check of revision 2 (Online Resource 1, Section S12), seeds 10-12, written by code/revision2_experiments.py --parts tune. Rebuilt from the console output of the run: test AUROCs and search times at full precision, validation AUROCs of the single trials rounded to three decimals. Same format as the file the script writes, so the script can resume from it.",
+ "lotbench_10": {
+  "forest": {
+   "trials": [
+    {
+     "params": {
+      "n_estimators": 134,
+      "min_samples_leaf": 3,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.895,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 994,
+      "min_samples_leaf": 1,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.892,
+     "minutes": 2.3
+    },
+    {
+     "params": {
+      "n_estimators": 103,
+      "min_samples_leaf": 2,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.89,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 162,
+      "min_samples_leaf": 1,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.871,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 392,
+      "min_samples_leaf": 2,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.891,
+     "minutes": 0.9
+    },
+    {
+     "params": {
+      "n_estimators": 999,
+      "min_samples_leaf": 20,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.853,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 153,
+      "min_samples_leaf": 2,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.9,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 733,
+      "min_samples_leaf": 5,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.902,
+     "minutes": 1.0
+    },
+    {
+     "params": {
+      "n_estimators": 775,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.892,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 287,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.903,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 196,
+      "min_samples_leaf": 5,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.895,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 263,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.889,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 678,
+      "min_samples_leaf": 2,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.892,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 180,
+      "min_samples_leaf": 2,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.896,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 479,
+      "min_samples_leaf": 20,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.88,
+     "minutes": 0.9
+    },
+    {
+     "params": {
+      "n_estimators": 843,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.893,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 228,
+      "min_samples_leaf": 3,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.889,
+     "minutes": 0.6
+    },
+    {
+     "params": {
+      "n_estimators": 103,
+      "min_samples_leaf": 20,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.84,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 562,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.904,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 102,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.898,
+     "minutes": 0.1
+    }
+   ],
+   "default": {
+    "params": {
+     "n_estimators": 300,
+     "min_samples_leaf": 3,
+     "max_features": "sqrt"
+    },
+    "test_AUROC": 0.9156621374110832
+   },
+   "tuned": {
+    "params": {
+     "n_estimators": 562,
+     "min_samples_leaf": 3,
+     "max_features": "sqrt"
+    },
+    "test_AUROC": 0.9174496011293729
+   },
+   "search_minutes": 8.686835638682048
+  },
+  "sale": {
+   "trials": [
+    {
+     "params": {
+      "lr": 0.0007109683115919729,
+      "wd": 0.0004288189455441335,
+      "bdrop": 0.02057562977273175,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.838,
+     "minutes": 51.8
+    },
+    {
+     "params": {
+      "lr": 0.000166147314990015,
+      "wd": 8.004256974196825e-06,
+      "bdrop": 0.25906635455430194,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.836,
+     "minutes": 60.6
+    },
+    {
+     "params": {
+      "lr": 0.00026198304661448053,
+      "wd": 1.3230837339054963e-06,
+      "bdrop": 0.1964002981252675,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.826,
+     "minutes": 60.6
+    },
+    {
+     "params": {
+      "lr": 0.0004183237482018866,
+      "wd": 4.4862910476480476e-05,
+      "bdrop": 0.18498974399699375,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.828,
+     "minutes": 52.1
+    },
+    {
+     "params": {
+      "lr": 0.0005708912002750079,
+      "wd": 1.814974967095106e-06,
+      "bdrop": 0.3111550446153568,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.808,
+     "minutes": 78.5
+    },
+    {
+     "params": {
+      "lr": 0.0009210501069183197,
+      "wd": 1.249909899536214e-06,
+      "bdrop": 0.236300923832519,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.802,
+     "minutes": 78.6
+    },
+    {
+     "params": {
+      "lr": 0.00011929986583755272,
+      "wd": 5.932952873483596e-06,
+      "bdrop": 0.17535576700304628,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.844,
+     "minutes": 69.7
+    },
+    {
+     "params": {
+      "lr": 0.0004283753392031367,
+      "wd": 1.8993613809135581e-06,
+      "bdrop": 0.23352241734366813,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.851,
+     "minutes": 78.1
+    },
+    {
+     "params": {
+      "lr": 0.00024378358177934727,
+      "wd": 3.6752141753393484e-05,
+      "bdrop": 0.22187086154035995,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.814,
+     "minutes": 78.4
+    },
+    {
+     "params": {
+      "lr": 0.0008052599604796384,
+      "wd": 2.6280299660885463e-05,
+      "bdrop": 0.04930317768999665,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.833,
+     "minutes": 51.5
+    },
+    {
+     "params": {
+      "lr": 0.00012438143144285937,
+      "wd": 0.00021251624326385632,
+      "bdrop": 0.41017726389951964,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.81,
+     "minutes": 60.6
+    },
+    {
+     "params": {
+      "lr": 0.00011832600612806735,
+      "wd": 4.63684228337485e-05,
+      "bdrop": 0.14215888098836,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.816,
+     "minutes": 69.6
+    },
+    {
+     "params": {
+      "lr": 0.0006598737726678087,
+      "wd": 2.5647934377488075e-05,
+      "bdrop": 0.16244084211269944,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.817,
+     "minutes": 60.6
+    },
+    {
+     "params": {
+      "lr": 0.00024545336382315956,
+      "wd": 1.666300590123858e-06,
+      "bdrop": 0.3091470516583003,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.828,
+     "minutes": 69.7
+    },
+    {
+     "params": {
+      "lr": 0.0005953858618951706,
+      "wd": 5.335140886551793e-05,
+      "bdrop": 0.48458880582881847,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.836,
+     "minutes": 51.7
+    },
+    {
+     "params": {
+      "lr": 0.0009631684408905123,
+      "wd": 3.4693609291143463e-06,
+      "bdrop": 0.09301765957307379,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.842,
+     "minutes": 51.6
+    },
+    {
+     "params": {
+      "lr": 0.0006655950576444717,
+      "wd": 0.00014610841455519775,
+      "bdrop": 0.12360115925141024,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.855,
+     "minutes": 51.6
+    },
+    {
+     "params": {
+      "lr": 0.00022926126412767101,
+      "wd": 0.00012131205106518247,
+      "bdrop": 0.0900895031690983,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.792,
+     "minutes": 60.5
+    },
+    {
+     "params": {
+      "lr": 0.00026865376549415764,
+      "wd": 2.32688535364743e-06,
+      "bdrop": 0.32837378074416324,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.836,
+     "minutes": 69.6
+    },
+    {
+     "params": {
+      "lr": 0.000583732322264738,
+      "wd": 0.0005058729807193346,
+      "bdrop": 0.3220760187393388,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.836,
+     "minutes": 60.6
+    }
+   ],
+   "default": {
+    "params": {
+     "lr": 0.0003,
+     "wd": 0.0001,
+     "bdrop": 0.3,
+     "width": [
+      64,
+      128
+     ],
+     "epochs": 30
+    },
+    "test_AUROC": 0.8835592890306014
+   },
+   "tuned": {
+    "params": {
+     "lr": 0.0006655950576444717,
+     "wd": 0.00014610841455519775,
+     "bdrop": 0.12360115925141024,
+     "width": [
+      64,
+      128
+     ],
+     "epochs": 15
+    },
+    "test_AUROC": 0.8675618690633385
+   },
+   "search_minutes": 1266.0133015433946
+  }
+ },
+ "lotbench_11": {
+  "forest": {
+   "trials": [
+    {
+     "params": {
+      "n_estimators": 699,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.898,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 919,
+      "min_samples_leaf": 3,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.902,
+     "minutes": 1.4
+    },
+    {
+     "params": {
+      "n_estimators": 530,
+      "min_samples_leaf": 2,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.898,
+     "minutes": 1.3
+    },
+    {
+     "params": {
+      "n_estimators": 858,
+      "min_samples_leaf": 3,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.899,
+     "minutes": 0.8
+    },
+    {
+     "params": {
+      "n_estimators": 152,
+      "min_samples_leaf": 2,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.896,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 118,
+      "min_samples_leaf": 5,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.877,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 296,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.902,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 105,
+      "min_samples_leaf": 10,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.864,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 116,
+      "min_samples_leaf": 20,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.844,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 390,
+      "min_samples_leaf": 2,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.897,
+     "minutes": 1.0
+    },
+    {
+     "params": {
+      "n_estimators": 210,
+      "min_samples_leaf": 5,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.899,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 236,
+      "min_samples_leaf": 2,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.898,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 145,
+      "min_samples_leaf": 1,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.892,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 997,
+      "min_samples_leaf": 10,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.877,
+     "minutes": 0.3
+    },
+    {
+     "params": {
+      "n_estimators": 476,
+      "min_samples_leaf": 20,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.884,
+     "minutes": 0.6
+    },
+    {
+     "params": {
+      "n_estimators": 189,
+      "min_samples_leaf": 2,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.904,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 365,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.904,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 417,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.901,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 197,
+      "min_samples_leaf": 20,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.847,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 635,
+      "min_samples_leaf": 10,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.892,
+     "minutes": 1.3
+    }
+   ],
+   "default": {
+    "params": {
+     "n_estimators": 300,
+     "min_samples_leaf": 3,
+     "max_features": "sqrt"
+    },
+    "test_AUROC": 0.8933637833602828
+   },
+   "tuned": {
+    "params": {
+     "n_estimators": 189,
+     "min_samples_leaf": 2,
+     "max_features": "log2"
+    },
+    "test_AUROC": 0.8951277431165411
+   },
+   "search_minutes": 9.280481994152069
+  },
+  "sale": {
+   "trials": [
+    {
+     "params": {
+      "lr": 0.0002564091741462695,
+      "wd": 0.0009125481653608185,
+      "bdrop": 0.3732187698846129,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.842,
+     "minutes": 52.2
+    },
+    {
+     "params": {
+      "lr": 0.0002554662409465056,
+      "wd": 0.00035847385793944913,
+      "bdrop": 0.41654356945450904,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.837,
+     "minutes": 52.1
+    },
+    {
+     "params": {
+      "lr": 0.00035501620160831695,
+      "wd": 0.00044443506179789994,
+      "bdrop": 0.3722397166474946,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.86,
+     "minutes": 70.1
+    },
+    {
+     "params": {
+      "lr": 0.0007893487188809323,
+      "wd": 0.00048227055240516363,
+      "bdrop": 0.4388163990369367,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.829,
+     "minutes": 78.8
+    },
+    {
+     "params": {
+      "lr": 0.00033037995470870684,
+      "wd": 0.00025493624399424087,
+      "bdrop": 0.2869266845071408,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.865,
+     "minutes": 61.1
+    },
+    {
+     "params": {
+      "lr": 0.00033054192744678523,
+      "wd": 0.00041252119334860677,
+      "bdrop": 0.21603758243202537,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.876,
+     "minutes": 61.7
+    },
+    {
+     "params": {
+      "lr": 0.0002562289355607137,
+      "wd": 1.4691896697036336e-05,
+      "bdrop": 0.27652828667350976,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.884,
+     "minutes": 62.8
+    },
+    {
+     "params": {
+      "lr": 0.00010623841072160998,
+      "wd": 1.8111069018563078e-05,
+      "bdrop": 0.09441500917093859,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.846,
+     "minutes": 61.1
+    },
+    {
+     "params": {
+      "lr": 0.000951481914189104,
+      "wd": 1.7708573584781947e-06,
+      "bdrop": 0.015467866607253522,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.863,
+     "minutes": 69.5
+    },
+    {
+     "params": {
+      "lr": 0.0008541224147060169,
+      "wd": 2.3688211739037637e-05,
+      "bdrop": 0.2068542214097917,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.857,
+     "minutes": 51.9
+    },
+    {
+     "params": {
+      "lr": 0.0006933095173012977,
+      "wd": 7.45762032581793e-05,
+      "bdrop": 0.05859851452890147,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.857,
+     "minutes": 52.7
+    },
+    {
+     "params": {
+      "lr": 0.00017140805681976833,
+      "wd": 1.3043820218558692e-05,
+      "bdrop": 0.08178055539526552,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.834,
+     "minutes": 62.3
+    },
+    {
+     "params": {
+      "lr": 0.0008229558380036987,
+      "wd": 6.643782357003029e-05,
+      "bdrop": 0.10727691706044296,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.844,
+     "minutes": 69.5
+    },
+    {
+     "params": {
+      "lr": 0.0005858036489526013,
+      "wd": 2.964307862756271e-05,
+      "bdrop": 0.3074730428108143,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.845,
+     "minutes": 51.7
+    },
+    {
+     "params": {
+      "lr": 0.0007105589607987394,
+      "wd": 7.070076557404897e-06,
+      "bdrop": 0.4897258333090139,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.84,
+     "minutes": 69.5
+    },
+    {
+     "params": {
+      "lr": 0.00030411769988297966,
+      "wd": 2.3055424593539015e-06,
+      "bdrop": 0.47530664474833867,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.849,
+     "minutes": 78.6
+    },
+    {
+     "params": {
+      "lr": 0.0004428105841836604,
+      "wd": 1.4242752321226356e-06,
+      "bdrop": 0.3802318868017532,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.86,
+     "minutes": 69.9
+    },
+    {
+     "params": {
+      "lr": 0.00011167428202139761,
+      "wd": 4.359992794750803e-06,
+      "bdrop": 0.48536064582875893,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.838,
+     "minutes": 69.2
+    },
+    {
+     "params": {
+      "lr": 0.0008548803680607997,
+      "wd": 0.0005053428937131828,
+      "bdrop": 0.045578116649405254,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.858,
+     "minutes": 60.8
+    },
+    {
+     "params": {
+      "lr": 0.000930065801165594,
+      "wd": 0.0003439266186301137,
+      "bdrop": 0.13355715487743114,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.837,
+     "minutes": 60.3
+    }
+   ],
+   "default": {
+    "params": {
+     "lr": 0.0003,
+     "wd": 0.0001,
+     "bdrop": 0.3,
+     "width": [
+      64,
+      128
+     ],
+     "epochs": 30
+    },
+    "test_AUROC": 0.8689547629186564
+   },
+   "tuned": {
+    "params": {
+     "lr": 0.0002562289355607137,
+     "wd": 1.4691896697036336e-05,
+     "bdrop": 0.27652828667350976,
+     "width": [
+      128,
+      256
+     ],
+     "epochs": 30
+    },
+    "test_AUROC": 0.8555492749428305
+   },
+   "search_minutes": 1265.737416724364
+  }
+ },
+ "lotbench_12": {
+  "forest": {
+   "trials": [
+    {
+     "params": {
+      "n_estimators": 234,
+      "min_samples_leaf": 2,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.903,
+     "minutes": 0.6
+    },
+    {
+     "params": {
+      "n_estimators": 360,
+      "min_samples_leaf": 1,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.89,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 359,
+      "min_samples_leaf": 2,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.895,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 306,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.905,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 139,
+      "min_samples_leaf": 2,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.903,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 594,
+      "min_samples_leaf": 1,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.892,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 393,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.913,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 129,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.903,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 334,
+      "min_samples_leaf": 2,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.895,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 758,
+      "min_samples_leaf": 3,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.905,
+     "minutes": 1.6
+    },
+    {
+     "params": {
+      "n_estimators": 323,
+      "min_samples_leaf": 1,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.909,
+     "minutes": 0.4
+    },
+    {
+     "params": {
+      "n_estimators": 123,
+      "min_samples_leaf": 1,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.901,
+     "minutes": 0.4
+    },
+    {
+     "params": {
+      "n_estimators": 911,
+      "min_samples_leaf": 20,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.879,
+     "minutes": 0.7
+    },
+    {
+     "params": {
+      "n_estimators": 443,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.906,
+     "minutes": 0.2
+    },
+    {
+     "params": {
+      "n_estimators": 267,
+      "min_samples_leaf": 1,
+      "max_features": 0.33
+     },
+     "val_AUROC": 0.91,
+     "minutes": 0.5
+    },
+    {
+     "params": {
+      "n_estimators": 476,
+      "min_samples_leaf": 20,
+      "max_features": 0.5
+     },
+     "val_AUROC": 0.887,
+     "minutes": 0.9
+    },
+    {
+     "params": {
+      "n_estimators": 855,
+      "min_samples_leaf": 10,
+      "max_features": 0.2
+     },
+     "val_AUROC": 0.897,
+     "minutes": 0.7
+    },
+    {
+     "params": {
+      "n_estimators": 381,
+      "min_samples_leaf": 5,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.877,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 287,
+      "min_samples_leaf": 3,
+      "max_features": "log2"
+     },
+     "val_AUROC": 0.886,
+     "minutes": 0.1
+    },
+    {
+     "params": {
+      "n_estimators": 686,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+     },
+     "val_AUROC": 0.9,
+     "minutes": 0.3
+    }
+   ],
+   "default": {
+    "params": {
+     "n_estimators": 300,
+     "min_samples_leaf": 3,
+     "max_features": "sqrt"
+    },
+    "test_AUROC": 0.8978997712622165
+   },
+   "tuned": {
+    "params": {
+     "n_estimators": 393,
+     "min_samples_leaf": 2,
+     "max_features": "sqrt"
+    },
+    "test_AUROC": 0.8981091587532635
+   },
+   "search_minutes": 7.67778848807017
+  },
+  "sale": {
+   "trials": [
+    {
+     "params": {
+      "lr": 0.0003132446523261198,
+      "wd": 2.241796442972904e-06,
+      "bdrop": 0.16510738769635136,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.813,
+     "minutes": 69.4
+    },
+    {
+     "params": {
+      "lr": 0.00024040730611484974,
+      "wd": 5.004614572919858e-05,
+      "bdrop": 0.3192337179789885,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.841,
+     "minutes": 61.1
+    },
+    {
+     "params": {
+      "lr": 0.0008007914861637551,
+      "wd": 0.00036317023791187174,
+      "bdrop": 0.11834945181920664,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.783,
+     "minutes": 70.1
+    },
+    {
+     "params": {
+      "lr": 0.0006416988580344154,
+      "wd": 0.0002786879288972068,
+      "bdrop": 0.4004282696764313,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.806,
+     "minutes": 69.7
+    },
+    {
+     "params": {
+      "lr": 0.0006859410668392311,
+      "wd": 0.00014582017279529718,
+      "bdrop": 0.25039526900763237,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.795,
+     "minutes": 69.4
+    },
+    {
+     "params": {
+      "lr": 0.000290596866379236,
+      "wd": 8.724040153077166e-06,
+      "bdrop": 0.10161154102590692,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.831,
+     "minutes": 52.0
+    },
+    {
+     "params": {
+      "lr": 0.0004884897747717122,
+      "wd": 4.6567934765394094e-05,
+      "bdrop": 0.4832688193900784,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.835,
+     "minutes": 52.1
+    },
+    {
+     "params": {
+      "lr": 0.0008304618056435908,
+      "wd": 0.00045467515350346345,
+      "bdrop": 0.000270887707945755,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.837,
+     "minutes": 51.8
+    },
+    {
+     "params": {
+      "lr": 0.0008421239417069015,
+      "wd": 3.1323593879041394e-05,
+      "bdrop": 0.49352591071202173,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.795,
+     "minutes": 78.3
+    },
+    {
+     "params": {
+      "lr": 0.0008206757169070827,
+      "wd": 7.269664867633446e-05,
+      "bdrop": 0.22177944894530238,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.798,
+     "minutes": 60.9
+    },
+    {
+     "params": {
+      "lr": 0.00021888275274327662,
+      "wd": 0.00016029754723349298,
+      "bdrop": 0.33831413132776733,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.83,
+     "minutes": 60.4
+    },
+    {
+     "params": {
+      "lr": 0.00014298512764419351,
+      "wd": 0.000345911614418519,
+      "bdrop": 0.4534021131297041,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.836,
+     "minutes": 69.7
+    },
+    {
+     "params": {
+      "lr": 0.00047168102208645636,
+      "wd": 1.2852176326634792e-06,
+      "bdrop": 0.3755369925947367,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.834,
+     "minutes": 69.4
+    },
+    {
+     "params": {
+      "lr": 0.00013341028823400102,
+      "wd": 0.0004795803687492942,
+      "bdrop": 0.3055713125333419,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 30
+     },
+     "val_AUROC": 0.818,
+     "minutes": 60.9
+    },
+    {
+     "params": {
+      "lr": 0.00011324988554228582,
+      "wd": 3.9825757574781e-05,
+      "bdrop": 0.22179911951873144,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.733,
+     "minutes": 51.7
+    },
+    {
+     "params": {
+      "lr": 0.0008476337676627412,
+      "wd": 1.3074984566694392e-05,
+      "bdrop": 0.4820302723661956,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.785,
+     "minutes": 69.8
+    },
+    {
+     "params": {
+      "lr": 0.0003735218852808251,
+      "wd": 6.621674459569356e-06,
+      "bdrop": 0.21675231119280758,
+      "width": [
+       32,
+       64
+      ],
+      "epochs": 15
+     },
+     "val_AUROC": 0.818,
+     "minutes": 51.6
+    },
+    {
+     "params": {
+      "lr": 0.0004034699259639708,
+      "wd": 1.6015737375265915e-06,
+      "bdrop": 0.24270731206327684,
+      "width": [
+       128,
+       256
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.832,
+     "minutes": 78.8
+    },
+    {
+     "params": {
+      "lr": 0.0004358118941821159,
+      "wd": 0.00014215312431086155,
+      "bdrop": 0.042841224446459825,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 60
+     },
+     "val_AUROC": 0.801,
+     "minutes": 78.5
+    },
+    {
+     "params": {
+      "lr": 0.0009205404676147709,
+      "wd": 1.5166379375064848e-05,
+      "bdrop": 0.17738422630572692,
+      "width": [
+       64,
+       128
+      ],
+      "epochs": 45
+     },
+     "val_AUROC": 0.832,
+     "minutes": 69.0
+    }
+   ],
+   "default": {
+    "params": {
+     "lr": 0.0003,
+     "wd": 0.0001,
+     "bdrop": 0.3,
+     "width": [
+      64,
+      128
+     ],
+     "epochs": 30
+    },
+    "test_AUROC": 0.8510908366257711
+   },
+   "tuned": {
+    "params": {
+     "lr": 0.00024040730611484974,
+     "wd": 5.004614572919858e-05,
+     "bdrop": 0.3192337179789885,
+     "width": [
+      64,
+      128
+     ],
+     "epochs": 30
+    },
+    "test_AUROC": 0.8009836879924217
+   },
+   "search_minutes": 1294.564407491684
+  }
+ }
+}

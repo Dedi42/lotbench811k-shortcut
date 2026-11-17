@@ -1,0 +1,172 @@
+{
+ "lotbench_10": {
+  "runs": [
+   {
+    "train_seed": 10,
+    "kind": "same",
+    "test_AUROC": 0.8835592890306014,
+    "minutes": 70.85627973079681
+   },
+   {
+    "train_seed": 10001,
+    "kind": "different",
+    "test_AUROC": 0.8565510925586743,
+    "minutes": 70.72733361323675
+   },
+   {
+    "train_seed": 10002,
+    "kind": "different",
+    "test_AUROC": 0.8743755286328868,
+    "minutes": 67.38650764226914
+   },
+   {
+    "train_seed": 10003,
+    "kind": "different",
+    "test_AUROC": 0.8736940105513603,
+    "minutes": 57.5897820075353
+   }
+  ]
+ },
+ "lotbench_11": {
+  "runs": [
+   {
+    "train_seed": 11,
+    "kind": "same",
+    "test_AUROC": 0.8689547629186564,
+    "minutes": 70.91421483357747
+   },
+   {
+    "train_seed": 11001,
+    "kind": "different",
+    "test_AUROC": 0.8613291224603297,
+    "minutes": 70.76768898963928
+   },
+   {
+    "train_seed": 11002,
+    "kind": "different",
+    "test_AUROC": 0.8344590447642674,
+    "minutes": 70.26590018669764
+   },
+   {
+    "train_seed": 11003,
+    "kind": "different",
+    "test_AUROC": 0.853753491170351,
+    "minutes": 70.8450193365415
+   }
+  ]
+ },
+ "lotbench_12": {
+  "runs": [
+   {
+    "train_seed": 12,
+    "kind": "same",
+    "test_AUROC": 0.8510908366257711,
+    "minutes": 70.72326717774074
+   },
+   {
+    "train_seed": 12001,
+    "kind": "different",
+    "test_AUROC": 0.8473825119567477,
+    "minutes": 70.596779859066
+   },
+   {
+    "train_seed": 12002,
+    "kind": "different",
+    "test_AUROC": 0.8481911808876874,
+    "minutes": 70.9970191001892
+   },
+   {
+    "train_seed": 12003,
+    "kind": "different",
+    "test_AUROC": 0.8032580693606894,
+    "minutes": 70.37974373896917
+   }
+  ]
+ },
+ "_summary": {
+  "seeds": {
+   "lotbench_10": {
+    "runs": [
+     0.8835592890306014,
+     0.8565510925586743,
+     0.8743755286328868,
+     0.8736940105513603
+    ],
+    "same_seed_run": 0.8835592890306014,
+    "tune_default": 0.8835592890306014,
+    "tune_tuned": 0.8675618690633385,
+    "default_runs_all": [
+     0.8835592890306014,
+     0.8565510925586743,
+     0.8743755286328868,
+     0.8736940105513603,
+     0.8835592890306014
+    ],
+    "mean": 0.8743478419608248,
+    "sd": 0.011032384891596966,
+    "range": 0.027008196471927093,
+    "same_seed_abs_diff": 0.0,
+    "tuned_minus_default_mean": -0.006785972897486281,
+    "tuned_z": -0.6150957353432214,
+    "tuned_within_default_range": true
+   },
+   "lotbench_11": {
+    "runs": [
+     0.8689547629186564,
+     0.8613291224603297,
+     0.8344590447642674,
+     0.853753491170351
+    ],
+    "same_seed_run": 0.8689547629186564,
+    "tune_default": 0.8689547629186564,
+    "tune_tuned": 0.8555492749428305,
+    "default_runs_all": [
+     0.8689547629186564,
+     0.8613291224603297,
+     0.8344590447642674,
+     0.853753491170351,
+     0.8689547629186564
+    ],
+    "mean": 0.8574902368464523,
+    "sd": 0.014335330793630889,
+    "range": 0.03449571815438901,
+    "same_seed_abs_diff": 0.0,
+    "tuned_minus_default_mean": -0.0019409619036218073,
+    "tuned_z": -0.13539707813956872,
+    "tuned_within_default_range": true
+   },
+   "lotbench_12": {
+    "runs": [
+     0.8510908366257711,
+     0.8473825119567477,
+     0.8481911808876874,
+     0.8032580693606894
+    ],
+    "same_seed_run": 0.8510908366257711,
+    "tune_default": 0.8510908366257711,
+    "tune_tuned": 0.8009836879924217,
+    "default_runs_all": [
+     0.8510908366257711,
+     0.8473825119567477,
+     0.8481911808876874,
+     0.8032580693606894,
+     0.8510908366257711
+    ],
+    "mean": 0.8402026870913334,
+    "sd": 0.020720607484243633,
+    "range": 0.04783276726508168,
+    "same_seed_abs_diff": 0.0,
+    "tuned_minus_default_mean": -0.03921899909891169,
+    "tuned_z": -1.892753343681386,
+    "tuned_within_default_range": false
+   }
+  },
+  "pooled_within_seed_sd": 0.015880373629895618,
+  "max_range": 0.04783276726508168,
+  "tuned_minus_default_mean": -0.01598197796667326,
+  "forest_minus_sale_default_mean": {
+   "mean": 0.044961642044990646,
+   "p_paired_t": 0.020622164370049597
+  }
+ }
+}
