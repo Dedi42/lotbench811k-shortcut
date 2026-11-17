@@ -1,0 +1,14 @@
+Method,η = 0.05,η = 0.1,η = 0.2,η = 0.3
+B1 Hotelling T²,0.582,0.647,0.739,0.777
+B2 Chamber deviation,0.577,0.588,0.68,0.753
+B3 Lot summary + L1-logistic,0.773,0.839,0.923,0.98
+B3 Lot summary + random forest,0.797,0.882,0.944,0.985
+B4 Wafer-level + aggregation,0.637,0.694,0.781,0.841
+B5 Isolation Forest,0.558,0.575,0.639,0.738
+B6 Deep one-class,0.575,0.595,0.627,0.766
+B7 Deep Sets,0.666,0.747,0.795,0.824
+B8 Set Transformer,0.648,0.744,0.843,0.866
+B9 Flat attention MIL,0.623,0.723,0.795,0.843
+B10 Tool commonality,0.575,0.564,0.569,0.553
+Ours (neural encoder),0.747,0.832,0.894,0.901
+"Ours-S (structured, normal-referenced)",0.733,0.813,0.889,0.943
