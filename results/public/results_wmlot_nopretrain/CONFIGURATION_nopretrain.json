@@ -1,0 +1,31 @@
+{
+ "time": "2026-11-04 15:34:25",
+ "purpose": "WM-811K lot task, SALE and SALE-lite without map-encoder pretraining",
+ "opts": {
+  "epochs": 30,
+  "pre_epochs": 100,
+  "menc_epochs": 3,
+  "attr": false,
+  "verbose": false,
+  "pre_menc": false
+ },
+ "seeds": [
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19
+ ],
+ "released_scores": "csv_package_v20/public/03_output/results_revision_v20 (scores of the paper run)",
+ "sha256": {
+  "core_experiments.py": "ec15adaf4b2de5a9228d9fc61e2cb1dcf4bf96d1695274e812e2f2bdeada71f1",
+  "extended_experiments.py": "c62841fe9cdd50f727b6542050c02f72b381a0bc9f63b0a85ec00a9a7238285a",
+  "revision_experiments.py": "ffaac40473705a1e1653569fb6059f209bce333a8164a34bad6b0acddd513f03",
+  "rerun_wmlot_without_wafer_pretraining.py": "6755e8f1d5248d25add6c3dff9f13c12d6c7e18de6fdb92b93a1a5e00ec4b47f"
+ }
+}
